@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+    <title>RallyStandUpBoard</title>
+
+    <!--App information-->
+    <meta name="Name" content="App: RallyStandUpBoard"/>
+    <meta name="Version" content="1.0"/>
+    <meta name="Vendor" content=""/>
+
+    <!--Include SDK-->
+    <script type="text/javascript" src="/slm/apps/1.29/sdk.js?debug=true"></script>
+    <!--Other JS-->
+    <script type="text/javascript" src="/slm/js/toolkit/0.02/yui.js"></script>
+    <script type="text/javascript" src="/slm/js/toolkit/0.02/toolkit.js"></script>
+    <script type="text/javascript" src="/slm/js/toolkit/0.02/date.js"></script>
+    <script type="text/javascript" src="/slm/js/toolkit/0.02/modal.js"></script>
+    <script type="text/javascript" src="/slm/js/toolkit/0.02/html.js"></script>
+    <script type="text/javascript" src="/slm/js/toolkit/0.02/connection.js"></script>
+    <script type="text/javascript" src="/slm/js/toolkit/0.02/grid.js"></script>
+    <script type="text/javascript" src="/slm/js/toolkit/0.02/renderer/renderer.js"></script>
+    <script type="text/javascript" src="/slm/js/toolkit/0.02/editor.js"></script>
+    <script type="text/javascript" src="/slm/js/toolkit/0.02/datasource.js"></script>
+
+    <!--Other CSS-->
+    <link type="text/css" rel="stylesheet" href="/slm/js-lib/yui/2.6.0/build/reset-fonts-grids/reset-fonts-grids.css"/>
+    <link type="text/css" rel="stylesheet" href="/slm/css/toolkit/0.02/renderer.css"/>
+    <link type="text/css" rel="stylesheet" href="/slm/css/toolkit/0.02/grid.css"/>
+    <link type="text/css" rel="stylesheet" href="/slm/css/toolkit/0.02/editor.css"/>
+    <link type="text/css" rel="stylesheet" href="/slm/css/toolkit/0.02/toolkit.css"/>
+
+    <script type="text/javascript" src="RallyStandUpBoard.js"></script>
+    <link rel="stylesheet" href="RallyStandUpBoard.css" type="text/css">
+
+</head>
+<body class="rallyStandUpBoard">
+<div id="wrapper">
+    <div id="status"></div>
+    <div id="header">
+        <div id="title"><h3>Task Board</h3></div>
+        <div id="info"></div>
+        <div class="clear"></div>
+    </div>
+    <div id="filter">
+        <div id="project">
+            <span id="proj_name"></span>
+                <span id="proj_scope_up">
+                    Scope Up:
+                    <input type="checkbox" id="proj_scope_up_control"/>
+                </span>
+                <span id="proj_scope_down">
+                    Scope Down:
+                    <input type="checkbox" id="proj_scope_down_control"/>
+                </span>
+        </div>
+                <span id="change_iteration">
+                    Change iteration:
+                    <select id="change_iteration_control" size="1"></select>
+                </span>
+                <span id="filter_user">
+                    Show work owned by:
+                    <select id="filter_user_control" size="1"></select>
+                </span>
+                <span id="hide_accepted">
+                    Hide accepted work:
+                    <input type="checkbox" id="hide_accepted_control"/>
+                </span>
+    </div>
+
+    <div id="taskboard"></div>
+</div>
+</body>
+</html>
